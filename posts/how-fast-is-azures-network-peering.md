@@ -20,7 +20,7 @@ locations using virtual network peering.
 
 <!--TEASER_END-->
 
-##Archicture##
+##Architecture##
 
 This test looks at the latency of a web application on the US west cost as experienced by a user
 in India.
@@ -29,7 +29,7 @@ The first, set up on the west coast, is a web server hosting a large ramdomly ma
 The second virtual machine is in India running a rever proxy pointing to the web server - **the proxy**.
 Both machines have virtual IPs and both machines are connected through a virtual network peer.
 
-Theoritically a **user** in India accessing the _server_ directly, and downloading the large file should take longer
+Theoritically a **client** in India accessing the _server_ directly, and downloading the large file should take longer
 than accessing the _proxy_.
 _The user_ in this experiement is a vm in India created in AWS.
 Using a different cloud company ensures that the user is independent of Microsoft's internal network.
@@ -44,10 +44,11 @@ The script also prints out the client's ip address and looks up the city from `i
 A "wrapper" bash script is also created which calls networktest with the URLs of the random file
 pointing directly to the server, and the URL through the reverse proxy.
 
-##Usage##
+## Usage ##
 
-The code is availabe here: [https://github.com/44digits/CloudRegionSpanning/](https://github.com/44digits/CloudRegionSpanning/)
+The code is availabe here: [https://github.com/44digits/CloudRegionSpanning/](https://github.com/44digits/CloudRegionSpanning/) <br />
 Usage reqires the installation of the following software:
+
 * Terraform [https://developer.hashicorp.com/terraform](https://developer.hashicorp.com/terraform)
 * Azure CLI: [https://learn.microsoft.com/en-us/cli/azure/](https://learn.microsoft.com/en-us/cli/azure/)
 * AWS CLI: [https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
