@@ -367,7 +367,7 @@ METADATA_FORMAT = "TOML"
 # Final output is <img src="LOGO_URL" id="logo" alt="BLOG_TITLE">.
 # The URL may be relative to the site root.
 #LOGO_URL = 'https://upload.wikimedia.org/wikipedia/commons/2/24/LEGO_logo.svg'
-LOGO_URL = '/logo.png'
+LOGO_URL = '/files/logo.png'
 
 # When linking posts to social media, Nikola provides Open Graph metadata
 # which is used to show a nice preview. This includes an image preview

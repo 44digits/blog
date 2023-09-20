@@ -8,7 +8,7 @@ link = ""
 description = ""
 type = "text"
 +++
-<img src="/selfi.png" alt="Andrew" width="150"/>
+<img src="/files/selfi.png" alt="Andrew" width="150"/>
 
 I'm Andrew, a spatial data engineer based in Southern California.
 Welcome to my personal blog, where I share intriguing projects I've been working on.
@@ -24,10 +24,10 @@ I hold degrees in Computer Science, Psychology, and International Development.
 Thanks for reading!
 
 
-[<img src="/linkedin_icon.png" alt="linkedin" width="40"/>](https://www.linkedin.com/in/andrewross44/)
+[<img src="/files/icons/linkedin_icon.png" alt="linkedin" width="40"/>](https://www.linkedin.com/in/andrewross44/)
 &nbsp;
-[<img src="/github_icon.png" alt="github" width="40"/>](https://github.com/44digits)
+[<img src="/files/icons/github_icon.png" alt="github" width="40"/>](https://github.com/44digits)
 &nbsp;
 <a href="#" data-contact="YmxvZ0A0NGRpZ2l0cy5jb20=" onfocus="this.href = 'mailto:' + atob(this.dataset.contact)" >
-<img src="/mail_icon.png" alt="email" width="40"/>
+<img src="/files/icons/mail_icon.png" alt="email" width="40"/>
 </a>
