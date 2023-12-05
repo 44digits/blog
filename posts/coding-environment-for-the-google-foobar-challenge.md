@@ -60,3 +60,6 @@ Installation steps:
 JupyterLab `.ipynb` notebooks are stored in the `notebooks` directory
 located in the same directory as the `Dockerfile`.
 Docker will create it if it does not exist.
+
+This `Dockerfile` can be easily extended to install additional Kernels such as go, rust, R, and so on.
+A full list and instructions can be found [here](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels).
