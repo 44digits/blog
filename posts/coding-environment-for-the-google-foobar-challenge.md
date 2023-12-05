@@ -28,7 +28,7 @@ If you choose Python you need to use version 2.7 and with limited libraries.
 Creating a Python coding environment for this Challenge is not easy
 because Python 2 is no longer being maintained.
 It was
-"[sunsetted](https://www.python.org/doc/sunset-python-2/)"
+[sunsetted](https://www.python.org/doc/sunset-python-2/)
 back in 2020 and is no longer available in some
 [Linux distributions](https://wiki.debian.org/Python).
 
@@ -37,8 +37,11 @@ that you want to keep separate from your main operating system.
 There are lots of coding tools for Python and
 [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/)
 is my favorite, providing an excellent environment for prototyping code.
-The link at the start of this article is to a GIST containing my
-Dockerfile for creating a JupyterLab container with both Python3 and Python2 kernels.
+
+- [https://github.com/44digits/dockerfiles/tree/master/foobar](https://github.com/44digits/dockerfiles/tree/master/foobar)
+
+The link above points to my
+`Dockerfile` for creating a JupyterLab container with both Python3 and Python2 kernels.
 [`pylint`](https://github.com/pylint-dev/pylint)
 and
 [`flake8`](https://github.com/pycqa/flake8)
@@ -46,10 +49,14 @@ are also installed in case Google gives extra points for conforming to PEP8!
 
 Installation steps:
 
-1. Build the container with: `docker build -t foobar .`
-1. Run the container with: `docker run --rm --name foobar -v ./notebooks:/code/notebooks -p 8888:8888 foobar`
+1. Build the container with:<br>
+`docker build -t foobar .`
+
+1. Run the container with:<br>
+`docker run --rm --name foobar -v ./notebooks:/code/notebooks -p 8888:8888 foobar`
+
 1. Access JupyterLab in the container with a browser: [http://localhost:8888/lab](http://localhost:8888/lab)
 
-JupyterLab `.ipynb` notebooks are stored in the `notebooks` directory outside
-of the container.  
-It is located in the same directory as the Dockerfile and Docker will create it if 
+JupyterLab `.ipynb` notebooks are stored in the `notebooks` directory
+located in the same directory as the `Dockerfile`.
+Docker will create it if it does not exist.
